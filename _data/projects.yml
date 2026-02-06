@@ -1,0 +1,7 @@
+- name: Personal Website
+  description: This website — a minimal Jekyll site built from scratch with custom SASS, deployed via GitHub Actions.
+  tags:
+    - Jekyll
+    - SASS
+    - GitHub Pages
+  url: https://github.com/NemoursWoo/nemourswoo.github.io

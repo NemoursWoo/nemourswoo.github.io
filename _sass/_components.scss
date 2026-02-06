@@ -1,0 +1,150 @@
+// Hero section (homepage)
+.hero {
+  margin-bottom: $spacing-lg;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $color-text-muted;
+  }
+}
+
+// Post list (blog page & homepage recent posts)
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 $spacing;
+
+  li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid $color-border;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  time {
+    font-size: 0.85rem;
+    color: $color-text-muted;
+    white-space: nowrap;
+    min-width: 6rem;
+  }
+
+  a {
+    font-weight: 500;
+  }
+}
+
+.view-all {
+  font-size: 0.95rem;
+}
+
+// Recent posts section
+.recent-posts {
+  h2 {
+    margin-top: $spacing;
+    font-size: 1.2rem;
+  }
+}
+
+// Page layout
+.page {
+  h1 {
+    margin-top: 0;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+// Post layout
+.post-header {
+  margin-bottom: $spacing-lg;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  time {
+    color: $color-text-muted;
+    font-size: 0.9rem;
+  }
+}
+
+.post-footer {
+  margin-top: $spacing-lg;
+  padding-top: $spacing;
+  border-top: 1px solid $color-border;
+}
+
+// Project cards
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing;
+  margin-top: $spacing;
+}
+
+.project-card {
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  padding: $spacing;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  p {
+    color: $color-text-muted;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    background: $color-code-bg;
+    color: $color-text-muted;
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+  }
+
+  .project-link {
+    font-size: 0.9rem;
+  }
+}
+
+// Contact page
+.contact-methods {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .post-list li {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .post-list time {
+    min-width: auto;
+  }
+}

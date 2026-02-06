@@ -1,0 +1,41 @@
+# Site settings
+title: Wu Chenghan | 武承翰
+description: Personal website of Wu Chenghan (武承翰) — projects, blog, and more.
+url: "https://nemourswoo.github.io"
+baseurl: ""
+author:
+  name: Wu Chenghan (武承翰)
+  email: nemourswoo@gmail.com
+  github: NemoursWoo
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+# Collections
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
