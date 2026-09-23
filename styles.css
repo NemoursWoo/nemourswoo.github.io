@@ -42,15 +42,15 @@ img { display: block; max-width: 100%; }
 .site-nav { display: flex; align-items: center; gap: clamp(18px, 2.5vw, 40px); }
 .site-nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 11px; text-decoration: none; }
 .site-nav a:hover { text-decoration: underline; }
-/* The default image is uncropped and unfiltered. It may exceed a short viewport. */
-.hero { position: relative; isolation: isolate; background: #d6d4cb; }
-.hero-art { position: relative; }
-.hero-art > img { width: 100%; height: auto; aspect-ratio: 1536/1040; object-fit: contain; }
-.hero-heading { position: absolute; z-index: 2; top: clamp(68px, 7.9vw, 160px); left: max(var(--gutter), calc((100vw - 1500px)/2)); color: #203b4b; }
+/* Keep the introduction and the uncropped painting in separate blocks. */
+.hero { display: flex; flex-direction: column; background: var(--paper); }
+.hero-heading { width: 100%; max-width: 1700px; margin-inline: auto; padding: clamp(64px, 6.4vw, 112px) var(--gutter) clamp(68px, 6.2vw, 108px); color: var(--ink); }
 .hero-heading .eyebrow { margin-bottom: 18px; letter-spacing: .22em; }
-.hero-heading h1 { font-size: clamp(66px, 7.25vw, 132px); line-height: 1.03; white-space: nowrap; }
+.hero-heading h1 { font-size: clamp(66px, 6.8vw, 116px); line-height: 1.03; }
 .hero-heading .hero-line { margin-top: 18px; font: italic clamp(18px, 1.72vw, 28px)/1.4 var(--serif); letter-spacing: -.012em; }
 .hero-heading .hero-line span { white-space: nowrap; }
+.hero-art { position: relative; }
+.hero-art > img { width: 100%; height: auto; aspect-ratio: 1536/1040; object-fit: contain; }
 .art-error { position: absolute; inset: auto var(--gutter) 10%; max-width: 470px; padding: 23px 26px; background: var(--paper); border: 1px solid var(--line); font-size: 13px; z-index: 3; }
 .art-error strong { display: block; font-family: var(--serif); font-size: 24px; font-weight: 400; line-height: 1.25; margin-bottom: 10px; }
 .art-error p { margin-bottom: 0; }
@@ -109,9 +109,6 @@ img { display: block; max-width: 100%; }
 .art-dialog figure img { width: 100%; max-height: calc(94svh - 166px); height: auto; aspect-ratio: 1536/1040; object-fit: contain; }
 .art-dialog figcaption { margin-top: 14px; font-size: 11px; line-height: 1.7; }
 .viewer-fallback { padding: 22px; border: 1px solid var(--line); font-size: 13px; margin-top: 12px; }
-@media (min-width: 1950px) {
-  .hero-heading { top: 9.5vw; }
-}
 @media (max-width: 1050px) {
   .wordmark-name { display: none; }
   .introduction,.contact { gap: 7%; }
@@ -125,8 +122,7 @@ img { display: block; max-width: 100%; }
   .header-inner { min-height: 68px; gap: 16px; }
   .signature { font-size: 30px; }
   .site-nav { gap: 21px; }
-  .hero { background: var(--paper); display: flex; flex-direction: column; }
-  .hero-heading { position: static; order: -1; padding: 45px var(--gutter) 39px; }
+  .hero-heading { padding: 45px var(--gutter) 39px; }
   .hero-heading .eyebrow { font-size: 9px; margin-bottom: 18px; letter-spacing: .16em; }
   .hero-heading h1 { font-size: clamp(53px, 10.8vw, 83px); }
   .hero-heading .hero-line { font-size: 19px; margin-top: 16px; line-height: 1.5; }
@@ -186,7 +182,7 @@ img { display: block; max-width: 100%; }
 @media print {
   .site-header { position: static; }
   .back-top,.view-art,.art-dialog,.skip-link,.art-error { display: none !important; }
-  .hero-heading { position: static; padding: 25px var(--gutter); }
+  .hero-heading { padding: 25px var(--gutter); }
   .hero-heading h1 { font-size: 44px; }
   .hero-art img { max-height: 360px; object-fit: contain; }
   .introduction,.research,.contact,.notes-section { padding-block: 25px; }
