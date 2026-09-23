@@ -46,7 +46,9 @@ img { display: block; max-width: 100%; }
 .hero { display: flex; flex-direction: column; background: var(--paper); }
 .hero-heading { width: 100%; max-width: 1700px; margin-inline: auto; padding: clamp(64px, 6.4vw, 112px) var(--gutter) clamp(68px, 6.2vw, 108px); color: var(--ink); }
 .hero-heading .eyebrow { margin-bottom: 18px; letter-spacing: .22em; }
-.hero-heading h1 { font-size: clamp(66px, 6.8vw, 116px); line-height: 1.03; }
+.hero-heading h1 { display: flex; align-items: baseline; gap: clamp(12px, 1.8vw, 24px); font-size: clamp(66px, 6.8vw, 116px); line-height: 1.03; }
+.name-english { white-space: nowrap; }
+.name-chinese { flex: none; font-family: 'Songti SC', 'Noto Serif CJK SC', 'Source Han Serif SC', serif; font-size: clamp(24px, .42em, 44px); font-weight: 400; letter-spacing: .04em; white-space: nowrap; }
 .hero-heading .hero-line { margin-top: 18px; font: italic clamp(18px, 1.72vw, 28px)/1.4 var(--serif); letter-spacing: -.012em; }
 .hero-heading .hero-line span { white-space: nowrap; }
 .hero-art { position: relative; }
@@ -124,7 +126,8 @@ img { display: block; max-width: 100%; }
   .site-nav { gap: 21px; }
   .hero-heading { padding: 45px var(--gutter) 39px; }
   .hero-heading .eyebrow { font-size: 9px; margin-bottom: 18px; letter-spacing: .16em; }
-  .hero-heading h1 { font-size: clamp(53px, 10.8vw, 83px); }
+  .hero-heading h1 { flex-direction: column; align-items: flex-start; gap: 7px; font-size: clamp(53px, 10.8vw, 83px); }
+  .name-chinese { font-size: clamp(23px, 5.8vw, 28px); }
   .hero-heading .hero-line { font-size: 19px; margin-top: 16px; line-height: 1.5; }
   .hero-art { width: 100%; }
   .hero-art > img { height: auto; width: 100%; aspect-ratio: 1536/1040; object-fit: contain; }
