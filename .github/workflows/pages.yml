@@ -32,6 +32,7 @@ jobs:
           mkdir -p _site/assets/images
           cp index.html styles.css app.js _site/
           cp assets/images/blue-rigi.jpg _site/assets/images/
+          cp -R assets/fonts _site/assets/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
