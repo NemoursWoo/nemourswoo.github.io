@@ -1,108 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#f5f2eb">
-  <meta name="description" content="Chenghan Wu (武承翰) — research interests, notes, and a little room for wonder.">
-  <title>Chenghan Wu 武承翰 — Research &amp; Notes</title>
-  <link rel="stylesheet" href="styles.css?v=7">
+  <meta name="description" content="Chenghan Wu works on in-context operator networks, numerical foundation models, inference-time harnesses, and automated scientific research.">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>Chenghan Wu · Research</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
-  <a class="skip-link" href="#about">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="header-inner">
-      <a class="wordmark" href="#top" aria-label="Chenghan Wu 武承翰 — back to top"><span class="signature" aria-hidden="true">cw.</span><span class="wordmark-name">Chenghan Wu 武承翰</span></a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#research">Research</a><a href="#notes">Notes</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Chenghan Wu, back to top">
+        <span class="brand-mark">cw.</span>
+        <span>Chenghan Wu <span class="brand-chinese" lang="zh-Hans">武承翰</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#hero">Research</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="cv/Chenghan_Wu_Research_CV_2026.pdf" target="_blank" rel="noopener noreferrer">CV ↗</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section aria-label="Introduction and featured artwork">
-      <div class="hero">
-        <div class="hero-heading">
-          <p class="eyebrow">Research &amp; a little room for wonder</p>
-          <h1><span class="name-english">Chenghan Wu</span><span class="name-chinese" lang="zh-Hans">武承翰</span></h1>
-          <p class="hero-line"><span>Learning from context.</span> <span>Looking at the world.</span></p>
+  <main id="main">
+    <section class="hero wrap" id="hero" aria-labelledby="hero-title">
+      <div class="hero-title">
+        <p class="eyebrow"><span></span> Applied mathematics × artificial intelligence</p>
+        <p class="hero-name">Chenghan Wu <span lang="zh-Hans">武承翰</span></p>
+        <h1 id="hero-title">In-context learning for <em>numerical intelligence.</em></h1>
+      </div>
+      <div class="hero-copy">
+        <p>I study numerical foundation models, extending large language model training and in-context learning to numerical problems across scientific disciplines.</p>
+        <p>My work spans in-context operator networks, inference-time harnesses, and automated scientific research.</p>
+        <small>Research Assistant · Department of Mathematics, National University of Singapore<br>Scaling Group · advised by Prof. Liu Yang</small>
+        <div class="hero-links">
+          <a href="#work">Selected work ↓</a>
+          <a href="mailto:wuchenghan@nus.edu.sg">Email ↗</a>
         </div>
-        <div class="hero-art">
-          <img id="hero-painting" src="assets/images/blue-rigi.jpg" width="1536" height="1040" fetchpriority="high" decoding="async" aria-describedby="painting-caption" alt="J. M. W. Turner’s The Blue Rigi, Sunrise: a blue mountain above a still lake, pale golden sky, and small figures, birds, and boats in the foreground.">
-          <div class="art-error" id="art-error" hidden>
-            <strong>The painting is unavailable.</strong>
-            <p>You can view it on <a href="https://commons.wikimedia.org/wiki/File:Blue_Rigi_painting.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons ↗</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="art-plate">
-        <p class="art-caption" id="painting-caption"><span class="artist">J. M. W. Turner</span><span class="separator">/</span><a href="https://www.tate.org.uk/art/artworks/turner-the-blue-rigi-sunrise-t12336" target="_blank" rel="noopener noreferrer"><em>The Blue Rigi, Sunrise</em></a><span>, 1842</span></p>
-        <button type="button" class="view-art" data-open-art aria-haspopup="dialog">View painting <span class="arrow" aria-hidden="true">↗</span></button>
       </div>
     </section>
 
-    <section class="introduction wrap" id="about" aria-labelledby="about-title">
-      <div><p class="eyebrow section-kicker">01 / About</p><h2 id="about-title">Between learning<br>and the world.</h2></div>
-      <div class="intro-copy">
-        <p class="lead">I’m interested in how learning systems adapt to something new.</p>
-        <p class="body-copy">Across scientific problems, examples, and interactions with the physical world, I’m drawn to questions of generalization: what transfers, what changes, and what can be learned from context.</p>
-        <div class="intro-actions"><a class="editorial-link" href="#research">Explore the research <span class="arrow" aria-hidden="true">→</span></a><a class="editorial-link" href="#contact">Get in touch <span class="arrow" aria-hidden="true">↗</span></a></div>
-      </div>
+    <section class="section wrap question-section" id="research" aria-labelledby="research-title">
+      <h2 class="question-banner" id="research-title">How can AI become a general-purpose system for scientific reasoning and discovery?</h2>
     </section>
 
-    <section class="research wrap" id="research" aria-labelledby="research-title">
-      <div class="section-heading"><h2 id="research-title">Research</h2><p class="eyebrow">02 / Connected questions</p></div>
-      <article class="research-entry">
-        <span class="entry-number" aria-hidden="true">I.</span>
-        <div><h3>Scientific foundation models</h3><p class="entry-topic">Learning across disciplines</p></div>
-        <p class="entry-copy">How can one model carry useful knowledge across different scientific problems, data structures, and ways of describing the world?</p>
-      </article>
-      <article class="research-entry">
-        <span class="entry-number" aria-hidden="true">II.</span>
-        <div><h3>Learning from context</h3><p class="entry-topic">Adaptation through examples</p></div>
-        <p class="entry-copy">How can a few examples change what a model does, without changing its weights? What makes those examples useful?</p>
-      </article>
-      <article class="research-entry">
-        <span class="entry-number" aria-hidden="true">III.</span>
-        <div><h3>Embodied intelligence</h3><p class="entry-topic">Learning through interaction</p></div>
-        <p class="entry-copy">How can learning systems build on experience, adapt to unfamiliar tasks, and improve through interaction with the physical world?</p>
-      </article>
-    </section>
-
-    <section class="notes-section" id="notes" aria-labelledby="notes-title">
+    <section class="section work-section" id="work" aria-labelledby="work-title">
       <div class="wrap">
-        <div class="section-heading"><h2 id="notes-title">In the margins</h2><p class="eyebrow">03 / Notes &amp; observations</p></div>
-        <div class="notes-grid">
-          <article class="note"><p class="eyebrow">At the desk</p><h3>Working notes</h3><p>A place for paper discussions, unfinished ideas, and explanations written to understand something better.</p></article>
-          <article class="note"><p class="eyebrow">Looking closely</p><h3>Art &amp; attention</h3><p>A place for paintings, exhibitions, and the slow practice of learning to notice.</p></article>
-          <article class="note"><p class="eyebrow">Further afield</p><h3>Field notes</h3><p>A place for walks, journeys, and observations from time spent away from the screen.</p></article>
+        <div class="section-heading">
+          <p class="section-index">Selected work</p>
+          <h2 id="work-title">Publications &amp; projects</h2>
+        </div>
+
+        <div class="work-list">
+          <article>
+            <div class="work-meta"><span>2026</span><strong>UNICON</strong></div>
+            <div class="work-main">
+              <h3>A Foundation Model of Numerical Intelligence with Cross-Disciplinary Generalization</h3>
+              <p class="authors"><strong>Chenghan Wu</strong>, Zongmin Yu, Liu Yang</p>
+              <p class="work-summary">A frozen model trained across heterogeneous graph-based systems that transfers to disciplines absent from training.</p>
+            </div>
+            <div class="work-links"><a href="https://arxiv.org/abs/2607.28432" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://scaling-group.github.io/numerical-intelligence/" target="_blank" rel="noopener noreferrer">Project ↗</a></div>
+          </article>
+
+          <article>
+            <div class="work-meta"><span>2026</span><strong>GICON</strong><small>ICML Workshop</small></div>
+            <div class="work-main">
+              <h3>Graph In-Context Operator Networks for Generalizable Spatiotemporal Prediction</h3>
+              <p class="authors"><strong>Chenghan Wu</strong>, Zongmin Yu, Boai Sun, Liu Yang</p>
+              <p class="work-summary">Graph-based in-context operator learning for changing geometry, context size, and spatiotemporal systems.</p>
+            </div>
+            <div class="work-links"><a href="https://arxiv.org/abs/2603.12725" target="_blank" rel="noopener noreferrer">arXiv ↗</a><a href="https://openreview.net/forum?id=WWriHdAbOm" target="_blank" rel="noopener noreferrer">Workshop ↗</a></div>
+          </article>
+
+          <article>
+            <div class="work-meta"><span>2026</span><strong>CHOP</strong></div>
+            <div class="work-main">
+              <h3>Chain of Operators: An Inference-Time Harness for In-Context Operator Learning</h3>
+              <p class="authors">Minghui Yang, <strong>Chenghan Wu</strong>, Ling Guo, Liu Yang</p>
+              <p class="work-summary">A harness that adapts frozen operator models through explicit mathematical transformations and compositional model calls.</p>
+            </div>
+            <div class="work-links"><a href="https://arxiv.org/abs/2606.12318" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="https://github.com/scaling-group/icon-chop" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
+          </article>
+        </div>
+
+        <div class="software-line">
+          <span class="software-label">Infrastructure</span>
+          <p><strong>ICON-Core</strong> · Open-source framework for in-context operator learning.</p>
+          <a href="https://github.com/scaling-group/icon-core" target="_blank" rel="noopener noreferrer">Repository ↗</a>
         </div>
       </div>
     </section>
 
-    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
-      <div><p class="eyebrow section-kicker">04 / Correspondence</p><h2 id="contact-title">Let’s compare notes.</h2></div>
-      <div class="contact-copy"><p>For conversations about learning, scientific models, and questions that cross boundaries.</p>
-        <div class="contact-links" aria-label="Contact links">
-          <a href="mailto:wuchenghan@nus.edu.sg">Email <span aria-hidden="true">↗</span></a>
-          <a href="https://scholar.google.com/citations?user=gW5PiEIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/NemoursWoo" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
+    <section class="section wrap about-section" id="about" aria-label="About">
+      <p class="section-index">About</p>
+      <p class="education">M.Sc. in Statistics, National University of Singapore.<br>B.Eng. in Naval Architecture and Ocean Engineering &amp; B.Sc. in Mathematics and Applied Mathematics, Shanghai Jiao Tong University.</p>
+      <p>I am now a Research Assistant in the Department of Mathematics at NUS and a member of the Scaling Group. Beyond my primary research, I am interested in large language models, digital and artificial life, and machine aesthetics.</p>
     </section>
   </main>
 
-  <footer class="site-footer wrap">
-    <div class="footer-line"><p class="footer-title"><span style="font:inherit;color:inherit;margin:0;display:inline">Chenghan Wu 武承翰</span><span>A space for research &amp; curiosity.</span></p><a class="back-top" href="#top">BACK TO THE LIGHT <span class="arrow" aria-hidden="true">↑</span></a></div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div><p>Chenghan Wu <span lang="zh-Hans">武承翰</span></p><a href="mailto:wuchenghan@nus.edu.sg">wuchenghan@nus.edu.sg</a></div>
+      <nav aria-label="Profile links">
+        <a href="cv/Chenghan_Wu_Research_CV_2026.pdf" target="_blank" rel="noopener noreferrer">CV ↗</a>
+        <a href="https://scholar.google.com/citations?user=gW5PiEIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+        <a href="https://github.com/NemoursWoo" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://scaling-group.github.io/team/" target="_blank" rel="noopener noreferrer">Scaling Group ↗</a>
+      </nav>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
   </footer>
-
-  <dialog class="art-dialog" id="art-dialog" aria-labelledby="viewer-title">
-    <div class="dialog-top"><h2 id="viewer-title">The Blue Rigi, Sunrise</h2><button type="button" class="dialog-close" id="close-art" aria-label="Close painting viewer">×</button></div>
-    <figure><img src="assets/images/blue-rigi.jpg" width="1536" height="1040" loading="lazy" decoding="async" alt="The complete, uncropped reproduction of The Blue Rigi, Sunrise by J. M. W. Turner."><figcaption>J. M. W. Turner · 1842 · Tate, T12336<br>Image: <a href="https://commons.wikimedia.org/wiki/File:Blue_Rigi_painting.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · No colour filter or generated additions.</figcaption></figure>
-    <p class="viewer-fallback" id="viewer-fallback" hidden>The painting is unavailable here. <a href="https://commons.wikimedia.org/wiki/File:Blue_Rigi_painting.jpg" target="_blank" rel="noopener noreferrer">View it on Wikimedia Commons ↗</a>.</p>
-  </dialog>
-  <noscript><p class="wrap" style="padding-block:20px">The painting viewer needs JavaScript; the rest of the page remains available.</p></noscript>
-  <script src="app.js"></script>
 </body>
 </html>

@@ -29,10 +29,9 @@ jobs:
 
       - name: Prepare site
         run: |
-          mkdir -p _site/assets/images
-          cp index.html styles.css app.js _site/
-          cp assets/images/blue-rigi.jpg _site/assets/images/
-          cp -R assets/fonts _site/assets/
+          mkdir -p _site/cv
+          cp index.html styles.css favicon.svg zhi-mang-xing-wuchenghan.woff2 _site/
+          cp cv/Chenghan_Wu_Research_CV_2026.pdf _site/cv/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
